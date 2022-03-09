@@ -1,0 +1,75 @@
+:root {
+  --bg-color: #9adbba;
+  --hd-color: #f2f2f2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  position: sticky;
+  background-color: var(--hd-color);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  margin: 0.5em;
+  padding: 0.2em 0.5em;
+}
+
+.nav-container a:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-container a:active {
+}
+
+.welcome {
+  display: flex;
+}
+
+.welcome h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+section h2 {
+  width: 100%;
+  font-size: 1.6rem;
+  border-bottom: 1px solid black;
+}
