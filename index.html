@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poiret+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <script
@@ -21,24 +21,31 @@
   <body>
     <header>
       <nav class="nav-container container">
-        <ul class="nav-menu">
-          <li><a href="#welcome">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-list">
+          <li><a href="#welcome" class="nav-item logo">&lt;WKG&gt;</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="container">
-        <section class="welcome" id="welcome">
-          <h1>Walther Kammen Gulbrandsen</h1>
-        </section>
-        <section class="" id="projects">
+      <section class="welcome" id="welcome">
+        <h1 class="welcome-title">
+          Walther <span>Kammen</span> <span>Gulbrandsen</span>
+        </h1>
+        <p class="welcome-subtitle">&#x3a;&#47;&#47;webdev</p>
+        <img class="welcome-image" src="./img/pc.jpg" alt="" />
+      </section>
+      <section class="" id="projects">
+        <div class="container">
           <h2>Projects</h2>
           <div class="projects">
             <div class="project">
               <h3>Calculator</h3>
-              <img src="./img/calculator.png" alt="" />
+              <img
+                src="https://res.cloudinary.com/daq5ahswm/image/upload/v1646872578/portfolio/calculator_ye2ljv.png"
+                alt=""
+              />
               <p>A simple calculator made with html, css and JS.</p>
               <div class="links">
                 <a
@@ -53,7 +60,10 @@
             </div>
             <div class="project">
               <h3>Mastermind</h3>
-              <img src="./img/mastermind.png" alt="" />
+              <img
+                src="https://res.cloudinary.com/daq5ahswm/image/upload/v1646872578/portfolio/mastermind_ctxfbu.png"
+                alt=""
+              />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -82,17 +92,27 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="contact" id="contact">
-          <h2>Contact</h2>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div>
+          <a href="https://github.com/therwal/" target="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:waltherkg@gmail.com" target="#">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/walther-kammen-gulbrandsen-6a8856162/"
+            target="#"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
-      <a href="https://github.com/therwal/" target="#">
-        <i class="fa-brands fa-github"></i>
-      </a>
-
       <p>© 2022 - All rights reserved</p>
     </footer>
   </body>
